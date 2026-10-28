@@ -1,5 +1,5 @@
 # ENGR315-project-mega-million
-Our project analyzes a .csv file with winning mega million numbers, date the number was pulled, mega ball, and the multiplier associated with each winning number combination. We are here to figure out any correlations with the questions we want answers for using our knowledge and skills gained in our ENGR 315 class.
+Our project analyzes a mega-millions.csv file with winning mega million numbers, date the number was pulled, mega ball, and the multiplier associated with each winning number combination. We are here to figure out any correlations with the questions we want answers for using our knowledge and skills gained in our ENGR 315 class.
 
 Project Title: Do the Mega Millions winning numbers have a suspicious correlation
 
@@ -28,4 +28,4 @@ Actions that need to be completed:
 (will be populated later), but we will list actions that need to be completed and use it as a guide. We will also mention any issues the group is having
 
 References/Source Files:
-Mega Millions.csv and data.gov
+Mega-Millions.csv and data.gov
