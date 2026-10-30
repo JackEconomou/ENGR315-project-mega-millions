@@ -15,6 +15,7 @@ We are using the winning mega millions dataset from data.gov there is a .csv fil
   3. What is the longest gap (measured in number of consecutive draws) that any individual Mega Ball number has gone without being drawn?
 
 Implementation Details:
+
 Question 1 will be answered using a chi-squared test
 
 Question 2 will be answered using a two sample t-test
