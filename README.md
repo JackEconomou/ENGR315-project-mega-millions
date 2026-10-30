@@ -16,7 +16,9 @@ We are using the winning mega millions dataset from data.gov there is a .csv fil
 
 Implementation Details:
 Question 1 will be answered using a chi-squared test
+
 Question 2 will be answered using a two sample t-test
+
 Question 3 will be answered by sorting and using indices.
 
 Results:
