@@ -4,6 +4,7 @@ Our project analyzes the Mega-Millions.csv file with winning mega million number
 Project Title: Do the Mega Millions winning numbers have a suspicious correlation
 
 Team Name: Millionaires
+
 Contributors: Jack Economou, Bryce Jennings, and Dilan Guox
 
 Objective and Motivation:
