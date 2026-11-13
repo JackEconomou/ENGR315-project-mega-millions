@@ -13,6 +13,7 @@ dataframe = pd.read_csv(file_path)
 # ie. (2-3, 2-4, 2-5, 2-6, 2-8, 2-9, 2-10, etc...)
 # Most likely utilizing a for loop and chi^2
 def dist_mb_numb(dataframe):
+    return dist_mb_numb
 
 #  2. Is there a significant difference in the average sum of the 5 main winning numbers between tuesday and friday drawings?
 # The data set starts on a Tuesday and walks back alternating between Tuesday and Friday.
@@ -22,10 +23,13 @@ def dist_mb_numb(dataframe):
 # The averages are then taken and compared using the ttest_ind() function, which will show if theres 
 # significant differences between the two averages.
 def sig_diff (dataframe):
+    return sig_diff
+
 
 #  3. What is the longest gap (measured in number of consecutive draws) that any individual Mega Ball number has gone without being drawn?
 # need to pulll out the dates from the csv file
 # Will also use a for loop to calculate the longest span between dates where number x was pulled.
 # Likely to be done 24 times since there are 24 numbers the megaball can be.
 def longest_gap (dataframe):
+    return longest_gap
     
