@@ -1,0 +1,35 @@
+import numpy as np
+from scipy.stats import ttest_1samp, chisquare, norm
+import pandas as pd
+import matplotlib.pyplot as plt
+
+file_path = "/Mega-Millions.csv"
+
+dataframe = pd.read_csv(file_path)
+
+#  1. Is there an even distribution between mega ball numbers drawn?
+# Can be solved with multpiple ways. 
+# Morgul recommended that we compare individual numbers with paired ttests:
+# ie. (2-3, 2-4, 2-5, 2-6, 2-8, 2-9, 2-10, etc...)
+# Most likely utilizing a for loop and chi^2
+
+#  2. Is there a significant difference in the average sum of the 5 main winning numbers between tuesday and friday drawings?
+# The data set starts on a Tuesday and walks back alternating between Tuesday and Friday.
+# Meanning we would need a program that gathers/ stores the sum of the 5 numbers (which are separated by a "space") within the 
+# respective Tuesday or Friday
+# The program then takes/ stores the average of the sums from Tuesday and Friday respectively.
+# The averages are then taken and compared using the ttest_ind() function, which will show if theres 
+# significant differences between the two averages.
+
+#  3. What is the longest gap (measured in number of consecutive draws) that any individual Mega Ball number has gone without being drawn?
+# need to pulll out the dates from the csv file
+# Will also use a for loop to calculate the longest span between dates where number x was pulled.
+# Likely to be done 24 times since there are 24 numbers the megaball can be
+rawdates = dataframe['Draw Date'] 
+
+def longest_gap (file_path):
+    line.split
+    separated_dates = 
+    megaball_numbers = 
+
+    for megaballs in megaball_numbers:
