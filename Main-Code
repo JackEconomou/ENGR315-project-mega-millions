@@ -1,5 +1,5 @@
 import numpy as np
-from scipy.stats import ttest_1samp, chisquare, norm
+from scipy.stats import ttest_1samp, ttest_ind, chisquare, norm
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -22,8 +22,32 @@ def dist_mb_numb(dataframe):
 # The program then takes/ stores the average of the sums from Tuesday and Friday respectively.
 # The averages are then taken and compared using the ttest_ind() function, which will show if theres 
 # significant differences between the two averages.
-def sig_diff (dataframe):
-    return sig_diff
+def sig_diff (dataframe, alpha=0.05):
+    df = dataframe.copy()
+
+    # 1) Sum the 5 winning numbers
+    df["Sum"] = df["Winning Numbers"].str.split().apply(lambda nums: sum(int(n) for n in nums ))
+
+    # 2) Label each drawing as Tuesday or Friday from its date
+    df["Weekday"] = pd.to_datetime(df["Draw Date"]).dt.day_name()
+
+    tuesday = df.loc[df["Weekday"] == "Tuesday", "Sum"]
+    friday = df.loc[df["Weekday"] == "Friday", "Sum"]
+
+    # 3) Average the sums for each day
+    tue_avg, fri_avg = tuesday.mean(), friday.mean()
+
+    # 4) Compare with an independent t-test
+    t_stat, p_value = ttest_ind(tuesday, friday)
+
+    print(f"Tuesday Average: {tue_avg:.2f}")
+    print(f"Friday Average: {fri_avg:.2f}")
+    print(f"t = {t_stat:.3f}, p = {p_value:.4f}")
+
+    return p_value < alpha             # True if the difference is significant
+
+
+print(sig_diff(dataframe))
 
 
 #  3. What is the longest gap (measured in number of consecutive draws) that any individual Mega Ball number has gone without being drawn?
