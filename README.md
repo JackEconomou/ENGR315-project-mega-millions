@@ -12,7 +12,7 @@ We are using the winning mega millions dataset from data.gov there is a .csv fil
   Questions we are asking and solving
   1. Is there an even distribution between mega ball numbers drawn?
   2. Is there a significant difference in the average sum of the 5 main winning numbers between tuesday and friday drawings?
-  3. What is the longest gap (measured in number of consecutive draws) that any individual Mega Ball number has gone without being drawn?
+  3. What is the longest gap (measured in number of consecutive draws) that any individual Multiplier number has gone without being drawn?
 
 Implementation Details:
 
