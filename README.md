@@ -23,10 +23,20 @@ Question 2 will be answered using a two sample t-test
 Question 3 will be answered by sorting and using indices.
 
 Results:
-(will be populated later)
+
+Question 1 (populated later):
+
+In question 2, Tuesday Average should be 159.14 and Friday Avergae should be 160.77. Also, t should equal = -.930, p = 0.3523.
+
+Question 3 (populated later):
 
 Conclusions:
-(will be populated later)
+
+Question 1 (populated later):
+
+As a result of Tuesday's and Friday's averages being so close together there is no significant difference so sig_diff returns False when we run the program.
+
+Question 3 (populated later):
 
 Actions that need to be completed:
 (will be populated later), but we will list actions that need to be completed and use it as a guide. We will also mention any issues the group is having
